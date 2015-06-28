@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DB842C11B3F057900EF82E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB842C01B3F057900EF82E6 /* AppDelegate.swift */; };
+		6DB842C31B3F057900EF82E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DB842C21B3F057900EF82E6 /* Images.xcassets */; };
+		6DB842C61B3F057900EF82E6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DB842C41B3F057900EF82E6 /* MainMenu.xib */; };
+		6DB842D21B3F057900EF82E6 /* MIDIParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB842D11B3F057900EF82E6 /* MIDIParserTests.swift */; };
+		6DB842DF1B3F09D300EF82E6 /* MIDIFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB842DE1B3F09D300EF82E6 /* MIDIFile.m */; };
+		6DB842E31B3F0A2E00EF82E6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB842E11B3F0A2E00EF82E6 /* MainViewController.swift */; };
+		6DB842E41B3F0A2E00EF82E6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DB842E21B3F0A2E00EF82E6 /* MainViewController.xib */; };
+		6DB842EB1B3F124500EF82E6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB842EA1B3F124500EF82E6 /* AudioToolbox.framework */; };
+		6DB842EE1B3F1F3D00EF82E6 /* voice.mid in Resources */ = {isa = PBXBuildFile; fileRef = 6DB842ED1B3F1F3D00EF82E6 /* voice.mid */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DB842CC1B3F057900EF82E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB842B31B3F057800EF82E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DB842BA1B3F057900EF82E6;
+			remoteInfo = MIDIParser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6DB842BB1B3F057900EF82E6 /* MIDIParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIDIParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB842BF1B3F057900EF82E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DB842C01B3F057900EF82E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DB842C21B3F057900EF82E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6DB842C51B3F057900EF82E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6DB842CB1B3F057900EF82E6 /* MIDIParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIDIParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB842D01B3F057900EF82E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DB842D11B3F057900EF82E6 /* MIDIParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIParserTests.swift; sourceTree = "<group>"; };
+		6DB842DD1B3F09D300EF82E6 /* MIDIFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIFile.h; sourceTree = "<group>"; };
+		6DB842DE1B3F09D300EF82E6 /* MIDIFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIFile.m; sourceTree = "<group>"; };
+		6DB842E11B3F0A2E00EF82E6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6DB842E21B3F0A2E00EF82E6 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		6DB842E91B3F112000EF82E6 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		6DB842EA1B3F124500EF82E6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6DB842ED1B3F1F3D00EF82E6 /* voice.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = voice.mid; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DB842B81B3F057900EF82E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB842EB1B3F124500EF82E6 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB842C81B3F057900EF82E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DB842B21B3F057800EF82E6 = {
+			isa = PBXGroup;
+			children = (
+				6DB842BD1B3F057900EF82E6 /* MIDIParser */,
+				6DB842CE1B3F057900EF82E6 /* MIDIParserTests */,
+				6DB842BC1B3F057900EF82E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DB842BC1B3F057900EF82E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DB842BB1B3F057900EF82E6 /* MIDIParser.app */,
+				6DB842CB1B3F057900EF82E6 /* MIDIParserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DB842BD1B3F057900EF82E6 /* MIDIParser */ = {
+			isa = PBXGroup;
+			children = (
+				6DB842E91B3F112000EF82E6 /* Header.h */,
+				6DB842E51B3F0B8A00EF82E6 /* Resources */,
+				6DB842E01B3F0A0900EF82E6 /* Controllers */,
+				6DB842DB1B3F09B600EF82E6 /* Libraries */,
+				6DB842C01B3F057900EF82E6 /* AppDelegate.swift */,
+				6DB842C21B3F057900EF82E6 /* Images.xcassets */,
+				6DB842C41B3F057900EF82E6 /* MainMenu.xib */,
+				6DB842EC1B3F141200EF82E6 /* Frameworks */,
+				6DB842BE1B3F057900EF82E6 /* Supporting Files */,
+			);
+			path = MIDIParser;
+			sourceTree = "<group>";
+		};
+		6DB842BE1B3F057900EF82E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DB842BF1B3F057900EF82E6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DB842CE1B3F057900EF82E6 /* MIDIParserTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DB842D11B3F057900EF82E6 /* MIDIParserTests.swift */,
+				6DB842CF1B3F057900EF82E6 /* Supporting Files */,
+			);
+			path = MIDIParserTests;
+			sourceTree = "<group>";
+		};
+		6DB842CF1B3F057900EF82E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DB842D01B3F057900EF82E6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DB842DB1B3F09B600EF82E6 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				6DB842DD1B3F09D300EF82E6 /* MIDIFile.h */,
+				6DB842DE1B3F09D300EF82E6 /* MIDIFile.m */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		6DB842E01B3F0A0900EF82E6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DB842E11B3F0A2E00EF82E6 /* MainViewController.swift */,
+				6DB842E21B3F0A2E00EF82E6 /* MainViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6DB842E51B3F0B8A00EF82E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DB842ED1B3F1F3D00EF82E6 /* voice.mid */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6DB842EC1B3F141200EF82E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DB842EA1B3F124500EF82E6 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DB842BA1B3F057900EF82E6 /* MIDIParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DB842D51B3F057900EF82E6 /* Build configuration list for PBXNativeTarget "MIDIParser" */;
+			buildPhases = (
+				6DB842B71B3F057900EF82E6 /* Sources */,
+				6DB842B81B3F057900EF82E6 /* Frameworks */,
+				6DB842B91B3F057900EF82E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MIDIParser;
+			productName = MIDIParser;
+			productReference = 6DB842BB1B3F057900EF82E6 /* MIDIParser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DB842CA1B3F057900EF82E6 /* MIDIParserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DB842D81B3F057900EF82E6 /* Build configuration list for PBXNativeTarget "MIDIParserTests" */;
+			buildPhases = (
+				6DB842C71B3F057900EF82E6 /* Sources */,
+				6DB842C81B3F057900EF82E6 /* Frameworks */,
+				6DB842C91B3F057900EF82E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DB842CD1B3F057900EF82E6 /* PBXTargetDependency */,
+			);
+			name = MIDIParserTests;
+			productName = MIDIParserTests;
+			productReference = 6DB842CB1B3F057900EF82E6 /* MIDIParserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DB842B31B3F057800EF82E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Federico Jordán";
+				TargetAttributes = {
+					6DB842BA1B3F057900EF82E6 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					6DB842CA1B3F057900EF82E6 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 6DB842BA1B3F057900EF82E6;
+					};
+				};
+			};
+			buildConfigurationList = 6DB842B61B3F057900EF82E6 /* Build configuration list for PBXProject "MIDIParser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DB842B21B3F057800EF82E6;
+			productRefGroup = 6DB842BC1B3F057900EF82E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DB842BA1B3F057900EF82E6 /* MIDIParser */,
+				6DB842CA1B3F057900EF82E6 /* MIDIParserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DB842B91B3F057900EF82E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB842C31B3F057900EF82E6 /* Images.xcassets in Resources */,
+				6DB842E41B3F0A2E00EF82E6 /* MainViewController.xib in Resources */,
+				6DB842EE1B3F1F3D00EF82E6 /* voice.mid in Resources */,
+				6DB842C61B3F057900EF82E6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB842C91B3F057900EF82E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DB842B71B3F057900EF82E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB842E31B3F0A2E00EF82E6 /* MainViewController.swift in Sources */,
+				6DB842DF1B3F09D300EF82E6 /* MIDIFile.m in Sources */,
+				6DB842C11B3F057900EF82E6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DB842C71B3F057900EF82E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB842D21B3F057900EF82E6 /* MIDIParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DB842CD1B3F057900EF82E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DB842BA1B3F057900EF82E6 /* MIDIParser */;
+			targetProxy = 6DB842CC1B3F057900EF82E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DB842C41B3F057900EF82E6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DB842C51B3F057900EF82E6 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DB842D31B3F057900EF82E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DB842D41B3F057900EF82E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6DB842D61B3F057900EF82E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = MIDIParser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MIDIParser/Header.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DB842D71B3F057900EF82E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = MIDIParser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MIDIParser/Header.h;
+			};
+			name = Release;
+		};
+		6DB842D91B3F057900EF82E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MIDIParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MIDIParser.app/Contents/MacOS/MIDIParser";
+			};
+			name = Debug;
+		};
+		6DB842DA1B3F057900EF82E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MIDIParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MIDIParser.app/Contents/MacOS/MIDIParser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DB842B61B3F057900EF82E6 /* Build configuration list for PBXProject "MIDIParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB842D31B3F057900EF82E6 /* Debug */,
+				6DB842D41B3F057900EF82E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DB842D51B3F057900EF82E6 /* Build configuration list for PBXNativeTarget "MIDIParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB842D61B3F057900EF82E6 /* Debug */,
+				6DB842D71B3F057900EF82E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6DB842D81B3F057900EF82E6 /* Build configuration list for PBXNativeTarget "MIDIParserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB842D91B3F057900EF82E6 /* Debug */,
+				6DB842DA1B3F057900EF82E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DB842B31B3F057800EF82E6 /* Project object */;
+}
